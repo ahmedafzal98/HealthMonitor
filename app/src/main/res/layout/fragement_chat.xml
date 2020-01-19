@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#c8b3ff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/img1"
+                    android:src="@drawable/health_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/edit_bp"
+                    android:inputType="number"
+                    android:layout_below="@id/img1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="#FCF9F9"/>
+                <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Pressure"
+                            android:layout_below="@id/img1"
+                            android:layout_alignLeft="@id/edit_bp"
+                            android:layout_alignStart="@id/edit_bp"
+                            android:layout_marginTop="22dp"
+                            android:textColor="#000000"
+                            android:textSize="14sp"/>
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/edit_bs"
+                    android:inputType="number"
+                    android:layout_below="@id/edit_bp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="#FCF9F9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Sugar"
+                    android:layout_below="@id/edit_bp"
+                    android:layout_alignLeft="@id/edit_bs"
+                    android:layout_alignStart="@id/edit_bs"
+                    android:layout_marginTop="22dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp"/>
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/edit_ci"
+                    android:layout_below="@id/edit_bs"
+                    android:inputType="number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="#FCF9F9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calorie Intake"
+                    android:layout_below="@id/edit_bs"
+                    android:layout_alignLeft="@id/edit_ci"
+                    android:layout_alignStart="@id/edit_ci"
+                    android:layout_marginTop="22dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp"/>
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/edit_date"
+                    android:layout_below="@id/edit_ci"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="#FCF9F9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Date"
+                    android:layout_below="@id/edit_ci"
+                    android:layout_alignLeft="@id/edit_date"
+                    android:layout_alignStart="@id/edit_date"
+                    android:layout_marginTop="22dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp"/>
+                  <Button
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+                   android:background="@drawable/date_img"
+                   android:layout_toRightOf="@id/edit_date"
+                   android:layout_below="@id/edit_ci"
+                   android:layout_marginTop="30dp"
+                   android:id="@+id/btn_current_date"/>
+                <Button
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:id="@+id/btn_submit"
+                android:layout_below="@id/edit_date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="SUBMIT"
+                android:background="@drawable/button_rectangle_pink"
+                android:textColor="#ffffff"/>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/img1"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:src="@drawable/health_img"/>-->
+
+<!--        <EditText-->
+<!--            android:layout_width="260dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:id="@+id/edit_bp"-->
+<!--            android:layout_below="@id/img1"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textColor="#000000"-->
+<!--            android:background="#ffffff"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Blood Pressure"-->
+<!--            android:layout_below="@id/img1"-->
+<!--            android:layout_alignLeft="@id/edit_bp"-->
+<!--            android:layout_alignStart="@id/edit_bp"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp"/>-->
+
+
+<!--        <EditText-->
+<!--            android:layout_width="260dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:id="@+id/edit_bs"-->
+<!--            android:layout_below="@id/edit_bp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textColor="#000000"-->
+<!--            android:background="#ffffff"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Blood Sugar"-->
+<!--            android:layout_below="@id/edit_bp"-->
+<!--            android:layout_alignLeft="@id/edit_bs"-->
+<!--            android:layout_alignStart="@id/edit_bs"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp"/>-->
+
+
+<!--        <EditText-->
+<!--            android:layout_width="260dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:id="@+id/edit_ci"-->
+<!--            android:layout_below="@id/edit_bs"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textColor="#000000"-->
+<!--            android:background="#ffffff"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Calorie Intake"-->
+<!--            android:layout_below="@id/edit_bs"-->
+<!--            android:layout_alignLeft="@id/edit_ci"-->
+<!--            android:layout_alignStart="@id/edit_ci"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp"/>-->
+
+
+<!--        <EditText-->
+<!--            android:layout_width="260dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:id="@+id/edit_date"-->
+<!--            android:layout_below="@id/edit_ci"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textColor="#000000"-->
+<!--            android:background="#ffffff"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Current Date"-->
+<!--            android:layout_below="@id/edit_ci"-->
+<!--            android:layout_alignLeft="@id/edit_date"-->
+<!--            android:layout_alignStart="@id/edit_date"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp"/>-->
+
+<!--        <Button-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:background="@drawable/date_img"-->
+<!--            android:layout_toRightOf="@id/edit_date"-->
+<!--            android:layout_below="@id/edit_ci"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:id="@+id/btn_current_date"/>-->
+
+<!--        <Button-->
+<!--            android:layout_width="260dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:id="@+id/btn_submit"-->
+<!--            android:layout_below="@id/edit_date"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:text="SUBMIT"-->
+<!--            android:background="@drawable/button_rectangle_pink"-->
+<!--            android:textColor="#ffffff"/>-->
+
+
+    </RelativeLayout>
+
